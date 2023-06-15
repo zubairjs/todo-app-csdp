@@ -1,7 +1,114 @@
+/* Completed Todo */
+
+#completed-list label {
+  text-decoration: line-through;
+}
+
+/* Deleted Todo */
+.delete {
+  visibility: hidden;
+  margin-left: 1rem;
+  padding: 0.3rem 0.4rem;
+  background-color: #e86252;
+  color: #333;
+  border: 1px solid grey;
+  position: absolute;
+  right: 1rem;
+}
+
+.item-container:hover .delete {
+  visibility: visible;
+}
+
+/* Decoration only */
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 body {
-  background-color: white;
+  min-width: 20rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 8em;
+  font-size: 110%;
+  background-color: darkslateblue;
 }
 
 h1 {
-  color: black;
+  color: #e3b505;
+  text-align: center;
+  font-size: 300%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+button,
+[type="checkbox"] {
+  cursor: pointer;
+}
+
+#add,
+#reset {
+  font-size: 100%;
+  background-color: #eee;
+  color: #333;
+  padding: 0.3rem 0.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#todo-item {
+  padding: 0.55rem;
+  font-size: 100%;
+}
+
+#todo-list,
+#completed-list {
+  margin-top: 1em;
+  min-height: 8em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 200%;
+  margin: 0.15em;
+}
+
+#todo-list {
+  background-color: #afc97e;
+  color: #333;
+}
+
+.item-container {
+  border: 1px solid;
+  border-radius: 5px;
+  height: 2rem;
+  padding: 0.5rem;
+  position: relative;
+}
+
+#todo-list .item-container {
+  background-color: #44b74c;
+}
+
+#completed-list .item-container {
+  background-color: #ee3924;
+}
+
+#completed-list {
+  background-color: #e86252;
+  color: #eee;
+}
+
+#completed-list h2 {
+  color: blanchedalmond;
 }

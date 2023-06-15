@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App CSDP</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <h1>Todo App CSDP</h1>
+    <h1>Todo App</h1>
+
+    <form action="">
+      <input type="text" id="todo-item" placeholder="Add your item here..." />
+      <button id="add">Add item</button>
+      <button id="reset">Reset</button>
+    </form>
+
+    <fieldset id="todo-list">
+      <h2>To Do's</h2>
+      <div class="item-container">
+        <input type="checkbox" name="" id="" />
+        <label for="">Buy banana</label>
+        <button class="delete">Delete</button>
+      </div>
+      <div class="item-container">
+        <input type="checkbox" name="" id="" />
+        <label for="">Buy apple</label>
+        <button class="delete">Delete</button>
+      </div>
+    </fieldset>
+
+    <fieldset id="completed-list">
+      <h2>Completed</h2>
+      <div class="item-container">
+        <input type="checkbox" name="" id="" checked />
+        <label for="">Buy sugar</label>
+        <button class="delete">Delete</button>
+      </div>
+      <div class="item-container">
+        <input type="checkbox" name="" id="" checked />
+        <label for="">Buy milk</label>
+        <button class="delete">Delete</button>
+      </div>
+    </fieldset>
   </body>
 </html>
